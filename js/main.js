@@ -84,7 +84,7 @@ $(function () {
 
     $('.depth1 > li:nth-child(1)').hover(
         function() {
-            $('.accent').css('left','266px');
+            $('.accent').css('left','278px');
         },
 
         function() {
@@ -94,7 +94,7 @@ $(function () {
     
     $('.depth1 > li:nth-child(2)').hover(
         function() {
-            $('.accent').css('left','385px');
+            $('.accent').css('left','389px');
         },
 
         function() {
@@ -104,7 +104,7 @@ $(function () {
 
     $('.depth1 > li:nth-child(3)').hover(
         function() {
-            $('.accent').css('left','507px');
+            $('.accent').css('left','503px');
         },
 
         function() {
@@ -114,7 +114,7 @@ $(function () {
 
     $('.depth1 > li:nth-child(4)').hover(
         function() {
-            $('.accent').css('left','625px');
+            $('.accent').css('left','630px');
         },
 
         function() {
@@ -124,7 +124,7 @@ $(function () {
     
     $('.depth1 > li:nth-child(5)').hover(
         function() {
-            $('.accent').css('left','747px');
+            $('.accent').css('left','784px');
         },
 
         function() {
