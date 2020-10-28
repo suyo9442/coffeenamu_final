@@ -28,15 +28,17 @@
         
             pager:true,	//페이징 
         
-            pause: 3000, 
+            pause: 5000, 
         
             autoDelay: 0,	
         
             slideWidth: 1920, 
         
-            speed: 300, 
+            speed: 700, 
         
-            stopAutoOnclick:true 
+            stopAutoOnclick:true, 
+
+            autoHover: true
         
         }); 
         
@@ -97,64 +99,63 @@
     <div class="main_wrap2" style="height: 3836px;">
 
 
-    <section id="main">
-        <header>
-            <a href="./index.html">
-                <img src="./img/logo.png" alt="" class="logo">
-            </a>
-
-            <div class="gnb_bg">
-                <nav id="gnb">
+        <section id="main">
+            <header id="top"><!-- changed -->
+                <div class="logo">
+                <a href="">
+                    <img src="./img/logo.png" style="width:50px; height:50px;" alt="">
+                </a>
+    
+                <div class="accent"> 
+                </div>
+                </div><!-- changed -->
+                
+    
+                <nav>
                     <ul class="depth1">
-                        <li> <a href="#">ABOUT</a>
-                            <ul class="depth2">
-                                <li> <a href="./sub1_1.html"> Brand Story </a> </li>                            
-                                <li> <a href="./sub1_2.html"> Location </a> </li>                            
+                        <li>
+                            <a href="./sub1_1.html">ABOUT</a>
+                            <ul class="sub">
+                                <li><a href="./sub1_1.html">Brand Story</a></li>
+                                <li><a href="./sub1_2.html">Location</a></li>
                             </ul>
                         </li>
-
-                        <li> <a href="#">MENU</a>
-                            <ul class="depth2">
-                                <li> <a href="./sub2_1.html"> New </a> </li>                            
-                                <li> <a href="#"> Coffee </a> </li>                            
-                                <li> <a href="#"> Tea & Beverage </a> </li>                            
-                                <li> <a href="#"> Dessert </a> </li>                               
+                        <li>
+                            <a href="./sub2_1.html">MENU</a>
+                            <ul class="sub">
+                                <li><a href="./sub2_1.html">New</a></li>
+                                <li><a href="">Coffee</a></li>
+                                <li><a href="">Tea & Beverage</a></li>
+                                <li><a href="">Dessert</a></li>
                             </ul>
                         </li>
-
-                        <li> <a href="#">STORE</a>
-                            <ul class="depth2">
-                                <li> <a href="#"> 매장찾기 </a> </li>                                                      
+                        <li>
+                            <a href="">STORE</a>			
+                            <ul class="sub">
+                                <li><a href="">매장찾기</a></li>
                             </ul>
                         </li>
-
-                        <li> <a href="#">FRANCHISE</a>
-                            <ul class="depth2">
-                                <li> <a href="#"> 가맹안내 </a></li>                                                    
-                                <li> <a href="#"> 창업지원 </a></li>                                                    
-                                <li> <a href="#"> 가맹점 현황 </a></li>                                                    
+        
+                        <li>
+                            <a href="">FRANCHISE</a>			
+                            <ul class="sub">
+                                <li><a href="">가맹안내</a></li>
+                                <li><a href="">창업지원</a></li>
+                                <li><a href="">가맹점 현황</a></li>
                             </ul>
                         </li>
-                        
-                        <li> <a href="#">COMMUNITY</a>
-                            <ul class="depth2">
-                                <li> <a href="#"> 커피나무 소식 </a> </li>                            
-                                <li> <a href="#"> F&Q </a> </li>                            
+        
+                        <li>
+                            <a href="">COMMUNITY</a>			
+                            <ul class="sub">
+                                <li><a href="">커피나무 소식</a></li>
+                                <li><a href="">F&Q</a></li>
                             </ul>
                         </li>
                     </ul>
-                </nav>
-            </div>
-        
-            <div class="accent">   
-            </div>
-
-            <div id="right">
-                <a href="#"><img src="./img/mypage.svg" alt="mypage"></a>
-                <a href="#"><img src="./img/search.svg" alt="search"></a>
-            </div>
-        </header>
-    </section>
+                </nav>    
+            </header>
+        </section>
 
     
     <div class="banner_wrap">
@@ -177,32 +178,34 @@
         </div>
 
         <div class="menu">
-            <div class="m1">
-                <img src="./img/뜸부기/oreo.png" alt="oreo">
-                <h1>오레오 커나치노</h1>
-                <h2>Oreo Conachino</h2>
-                <button>ADD TO CART</button>
-            </div>
+            <div class="menu_wrap">
+                <div class="m1">
+                    <img src="./img/뜸부기/oreo.png" alt="oreo">
+                    <h1>오레오 커나치노</h1>
+                    <h2>Oreo Conachino</h2>
+                    <button>ADD TO CART</button>
+                </div>
 
-            <div class="m2">
-                <img src="./img/뜸부기/javachip.png" alt="javachip">
-                <h1>자바칩 커나치노</h1>
-                <h2>Javachip Conachino</h2>
-                <button>ADD TO CART</button>
-            </div>
+                <div class="m2">
+                    <img src="./img/뜸부기/javachip.png" alt="javachip">
+                    <h1>자바칩 커나치노</h1>
+                    <h2>Javachip Conachino</h2>
+                    <button>ADD TO CART</button>
+                </div>
 
-            <div class="m3">
-                <img src="./img/뜸부기/jollypong.png" alt="jollypong">
-                <h1>죠리퐁 커나치노</h1>
-                <h2>Jollypong Conachino</h2>
-                <button>ADD TO CART</button>
-            </div>
+                <div class="m3">
+                    <img src="./img/뜸부기/jollypong.png" alt="jollypong">
+                    <h1>죠리퐁 커나치노</h1>
+                    <h2>Jollypong Conachino</h2>
+                    <button>ADD TO CART</button>
+                </div>
 
-            <div class="m4">
-                <img src="./img/뜸부기/plainyogurt.png" alt="plainyogurt">
-                <h1>요거트 커나치노</h1>
-                <h2>Yogurt Conachino</h2>
-                <button>ADD TO CART</button>
+                <div class="m4">
+                    <img src="./img/뜸부기/plainyogurt.png" alt="plainyogurt">
+                    <h1>요거트 커나치노</h1>
+                    <h2>Yogurt Conachino</h2>
+                    <button>ADD TO CART</button>
+                </div>
             </div>
         </div>
 
@@ -210,7 +213,6 @@
             
         </div>
     </section>
-
 
 
     <section id="content2">
@@ -272,58 +274,55 @@
     </section>
 
 
-
     <section id="content4">
-        <div class="trans"> 
-            <div class="title">
+        <div class="content4_container">
+            <div class="left"></div>
+            <div class="trans">
                 <h1>Coffee <span> Namu</span></h1>
-                <h3>Franchise</h3>
-                <p class="line"> </p>
-                <h2>고객과 가맹점주, 협력사의 상생의 가치를 실현합니다. 해외에도 로열티를 내지않는 순수한 국내브랜드로 <br>품질좋고 맛있는 정직한 커피를 제공합니다. </h2>
-                <button>가맹안내</button>
+                    <h3>Franchise</h3>
+                    <p class="line"> </p>
+                    <h2>고객과 가맹점주, 협력사의 상생의 가치를 실현합니다. <br> 해외에도 로열티를 내지않는 순수한 국내브랜드로 <br>품질좋고 맛있는 정직한 커피를 제공합니다. </h2>
+                    <button>가맹안내</button>
             </div>
         </div>
     </section>
 
-
-    <footer id="footer">
-        <div class="footer_container">
-        <ul class="footer_menu">
-            <li><a href="#"><strong>개인정보 처리방침</strong></a> </li>
-            <li><a href="#">멤버스 이용약관 </a></li>
-            <li><a href="#">가입안내</a></li>
-            <li><a href="#">이용안내</a></li>
-            <li><a href="#">고객의 소리</a></li>
-            <li><a href="#">Sitemap</a></li>
-        </ul>
-
-        <ul class="sns">
-            <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="./img/twitter.png" alt=""></a></li>
-            <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
-        </ul>
-
-        </div> <!--container end-->
-
-        <div class="footer_line"></div>
-
-
-        <div class="footer_container2">
-            <img class="footer_logo" src="./img/logo2.png"  alt="footer logo">
-            
-            <p class="footer_text">서울특별시 동작구 상도로53길 6 (서울특별시 상도동 427) &nbsp; &nbsp;TEL: 1577-9173&nbsp;&nbsp;&nbsp; FAX:02-821-0744 <br>
-            사업자등록번호:108-86-14200&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E-MAIL:Info@coffeenamu.co.kr <br>
-            (주)커피나무 대표자:백지연&nbsp;&nbsp;&nbsp; 개인정보보호책임자:백승훈
-            </p>
-
-            <p class="copy">
-                @Coffee namu. &copy;All right Reserved.
-            </p>   
-        </div>
-    </footer>
-
 </div>
 </div>
+
+<footer id="footer" style="top: 3536px;">
+    <div class="footer_container">
+    <ul class="footer_menu">
+        <li><a href="#"><strong>개인정보 처리방침</strong></a> </li>
+        <li><a href="#">멤버스 이용약관 </a></li>
+        <li><a href="#">가입안내</a></li>
+        <li><a href="#">이용안내</a></li>
+        <li><a href="#">고객의 소리</a></li>
+        <li><a href="#">Sitemap</a></li>
+    </ul>
+
+    <ul class="sns">
+        <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="./img/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+    </ul>
+    </div> <!--container end-->
+
+    <div class="footer_line"></div>
+
+    <div class="footer_container2">
+        <img class="footer_logo" src="./img/logo2.png"  alt="footer logo">
+        
+        <p class="footer_text">서울특별시 동작구 상도로53길 6 (서울특별시 상도동 427) &nbsp; &nbsp;TEL: 1577-9173&nbsp;&nbsp;&nbsp; FAX:02-821-0744 <br>
+        사업자등록번호:108-86-14200&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E-MAIL:Info@coffeenamu.co.kr <br>
+        (주)커피나무 대표자:백지연&nbsp;&nbsp;&nbsp; 개인정보보호책임자:백승훈
+        </p>
+
+        <p class="copy">
+            @Coffee namu. &copy;All right Reserved.
+        </p>  
+    </div>
+</footer>
 
 </body>
 </html>
